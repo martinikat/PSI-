@@ -15,3 +15,10 @@ print('{:>10}'.format('test'))
 print('{:10.5}'.format('xylophone'))
 print('{:f}'.format(3.141592653589793))
 print('{:{align}{width}}'.format('test', align='^', width='10'))
+
+zmienna="Witam"
+
+print(dir(zmienna))
+help(zmienna.isspace())
+
+print(imie[::-1],nazwisko[::-1])
