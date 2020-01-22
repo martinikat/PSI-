@@ -16,3 +16,4 @@ class Zamowienie(models.Model):
     idKlienta=models.ForeignKey(Klient, on_delete=models.CASCADE)
     idProduktu=models.ForeignKey(Produkt, on_delete=models.CASCADE)
     ilosc=models.IntegerField()
+    owner = models.ForeignKey('auth.User', related_name='Zamowienia', on_delete=models.CASCADE);
